@@ -1,0 +1,39 @@
+.navigationbar{
+    margin-top: 80px;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.navpadding{
+    padding: 20px;
+    background-color:grey !important
+ }
+    /* .navbar-light .navbar-nav .nav-link{
+        color: red
+    } */
+    /* .navbar-light .navbar-nav .active.nav-link{
+        color:red
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: green
+    } */
+    .review{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        color: grey;
+    }
+    #card{
+        width:18rem;
+        padding: 20px;
+        display: inline-block;
+    }
+    .logo{
+        padding: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .logo1{
+        padding: 20px;
+        text-align: center;
+        /* font-weight: */
+        color: rgb(96, 96, 201);
+    }
+    
+    
