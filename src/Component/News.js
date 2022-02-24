@@ -7,15 +7,37 @@ export default class News extends Component {
         console.log("I am in constructor");
         this.state = {
             articles: [],
-            loading: false
+            loading: false,
+            page :1,
         }
     }
+   
     async componentDidMount(){
-        let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=af5292dab1a74ac69a0569f0c65d34d0"
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=af5292dab1a74ac69a0569f0c65d34d0&page=1`
         let data= await fetch(url)
         let parsdata = await data.json();
         console.log(parsdata);
         this.setState({articles:parsdata.articles})
+    }
+    handlePrevClick = async()=>{
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=af5292dab1a74ac69a0569f0c65d34d0&page=${this.state.page-1}`
+        let data= await fetch(url)
+        let parsdata = await data.json();
+        console.log(parsdata);
+        this.setState({
+            articles:parsdata.articles,
+            page:this.state.page-1
+        })
+     }
+     handleNextClick = async()=>{
+        let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=af5292dab1a74ac69a0569f0c65d34d0&page=${this.state.page+1}`
+        let data= await fetch(url)
+        let parsdata = await data.json();
+        console.log(parsdata);
+        this.setState({
+            articles:parsdata.articles,
+            page:this.state.page+1
+        })
     }
     render() {
     return (
@@ -30,6 +52,10 @@ export default class News extends Component {
     })}
               </div>
         </div>
+        <div className="container d-flex justify-content-between">
+          <button disabled={this.state.page<=1} type="button" className="btn btn-dark" onClick={this.handlePrevClick}>&laquo; Previous</button>
+          <button type="button" className="btn btn-dark" onClick={this.handleNextClick}>Next &raquo;</button>
+      </div>
       </>
     )
   }
