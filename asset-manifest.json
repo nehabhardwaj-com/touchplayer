@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/touchplayer/static/css/main.596408eb.css",
+    "main.js": "/touchplayer/static/js/main.b7dafa17.js",
+    "static/js/787.4e2837a3.chunk.js": "/touchplayer/static/js/787.4e2837a3.chunk.js",
+    "static/media/logo.svg": "/touchplayer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/touchplayer/index.html",
+    "main.596408eb.css.map": "/touchplayer/static/css/main.596408eb.css.map",
+    "main.b7dafa17.js.map": "/touchplayer/static/js/main.b7dafa17.js.map",
+    "787.4e2837a3.chunk.js.map": "/touchplayer/static/js/787.4e2837a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.596408eb.css",
+    "static/js/main.b7dafa17.js"
+  ]
+}
