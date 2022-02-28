@@ -1,5 +1,5 @@
 .navigationbar{
-    margin-top: 80px;
+    margin-top: 80px;   
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.navpadding{
     padding: 20px;
@@ -35,5 +35,29 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navpadding{
         /* font-weight: */
         color: rgb(96, 96, 201);
     }
+
+.sidebar{
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 150;
+    left: 0;
+    /* top layer */
+    z-index: 9999;
+    background-color:grey;
+    margin-top: 40px;
+  }
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.navbar1{
+      /* background-color:grey!important; */
+      top: 0;
+      left: 0;
+      position: fixed;
+       width: 100%;
+      z-index: 9999;
+      color:white
+  }
+.container{
+  margin-top: 100px;}
     
     

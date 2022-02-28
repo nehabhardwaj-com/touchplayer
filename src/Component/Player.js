@@ -1,7 +1,14 @@
 import React from 'react'
 import './Main.css';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
 
 function Player() {
+    const options = [
+        'one', 'two', 'three'
+      ];
+      const defaultOption = options[0];
   return (
       <div className='container navigationbar'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light navpadding">
@@ -38,15 +45,14 @@ function Player() {
                 <button className="btn btn-secondary dropdown-toggle  my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown button
                 </button>
-                <button className="btn btn-secondary dropdown-toggle mx-3 my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button2
-        </button>
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a className="dropdown-item" href="/">Action</a>
             <a className="dropdown-item" href="/">Another action</a>
             <a className="dropdown-item" href="/">Something else here</a>
         </div>
         </div>  
+       
+{/* <Dropdown options={options} onChange value={defaultOption} placeholder="Select an option" />; */}
         <b><hr /></b>
         <div className="card mx-3 my-3" id="card">
             <img src="" className="card-img-top" alt="..."/>
