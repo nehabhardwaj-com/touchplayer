@@ -15,6 +15,7 @@ function App() {
        <Router>
        <NavBar />
        <Switch>
+       <Route exact path="/"><News key="general1"  pagesize="5" country="in" category="general"/></Route>        
             <Route exact path="/home"><News key="general1"  pagesize="5" country="in" category="general"/></Route>        
             <Route exact path="/general"><News key="general"  pagesize="5" country="in" category="general"/></Route>           
             <Route exact path="/business"><News key="business"  pagesize="5" country="in" category="business"/></Route>
