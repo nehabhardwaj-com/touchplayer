@@ -15,7 +15,7 @@ export class NewsItem extends Component {
     return (
       <>
         <div className="card  my-3" id="card">
-          <a href={source} target="_blank">
+          <a href={source} target="_blank" rel="noreferrer">
             <img
               src={
                 imageUrl

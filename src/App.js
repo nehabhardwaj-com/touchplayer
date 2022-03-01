@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import './Component/Main.css';
 // import Player from './Component/Player';
@@ -15,8 +15,8 @@ function App() {
        <Router>
        <NavBar />
        <Switch>
-       <Route exact path="/"><News key="general1"  pagesize="5" country="in" category="general"/></Route>        
-            <Route exact path="/home"><News key="general1"  pagesize="5" country="in" category="general"/></Route>        
+       <Route exact path="/"><News key="logo"  pagesize="5" country="in" category="general"/></Route>        
+            {/* <Route exact path="/home"><News key="home"  pagesize="5" country="in" category="general"/></Route>         */}
             <Route exact path="/general"><News key="general"  pagesize="5" country="in" category="general"/></Route>           
             <Route exact path="/business"><News key="business"  pagesize="5" country="in" category="business"/></Route>
             <Route exact path="/entertainment"><News key="entertainment"  pagesize="5" country="in" category="entertainment"/></Route>

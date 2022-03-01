@@ -7,7 +7,7 @@ export class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar1">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/general">
+            <Link className="navbar-brand" key="newsbite" to="/general">
               NewsBites
             </Link>
             <button
