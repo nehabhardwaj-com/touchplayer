@@ -20,8 +20,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navpadding{
         color: grey;
     }
     #card{
-        width:18rem;
-        padding: 20px;
+        width: 22rem;
+        padding: 0px;
         display: inline-block;
     }
     .logo{
@@ -58,6 +58,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.navpadding{
       color:white
   }
 .container{
-  margin-top: 100px;}
+  margin-top: 80px;}
     
     
